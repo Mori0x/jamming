@@ -1,5 +1,5 @@
 const clientId = process.env.REACT_APP_CLIENT_ID; 
-const redirectUri = 'http://localhost:3000/'; // Have to add this to your accepted Spotify redirect URIs on the Spotify API.
+const redirectUri = 'https://joyful-lollipop-e097f2.netlify.app/'; // Have to add this to your accepted Spotify redirect URIs on the Spotify API.
 let accessToken;
 const localStorageKey = 'spotifyAccessToken';
 let expirationTime;
