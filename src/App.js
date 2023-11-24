@@ -43,7 +43,7 @@ function App() {
     check = check.map((item) => item.name)
     console.log(check);
     if (trackDiff.length > 0  && tracksToDelete.length > 0 && check.includes(name)) {
-      trackDiff.map(track => {
+      trackDiff.forEach(track => {
         if (tracksToDelete.includes(track)) {
           console.log('removing...')
           Spotify.removeTracks([track], name);
@@ -103,7 +103,8 @@ function App() {
         id: track.track.id,
         name: track.track.name,
         artist: track.track.artists[0].name,
-        album: track.track.album.name
+        album: track.track.album.name,
+        image: track.track.album.images[0].url
       }))
       console.log(tracks);
       setTracksToDelete(tracks);
