@@ -1,0 +1,63 @@
+.playlist_list {
+    background: rgba( 5, 18, 30, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 14px );
+    -webkit-backdrop-filter: blur( 14px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 450px;
+    text-align: left;
+    padding-left: 20px;
+    min-height: 300px;
+}
+
+.playlist_list h2 {
+    color: white;
+
+}
+
+.line {
+    height: 1px;
+    background: rgb(255, 255, 255);
+    width: 100%;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+
+button svg {
+    color: white;
+    width: 2em;
+    height: 2em;
+    transition: 0.2s ease;
+}
+
+button svg:hover {
+    color: rgb(11, 11, 47);
+}
+
+.playlist_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    color: white;
+
+}
+
+@media only screen and (min-width: 1560px) {
+    .playlist_list {
+        width: 550px;
+    }
+    
+}
+
+@media only screen and (max-width: 680px) {
+    .playlist_list {
+        width: 100%;
+    }
+}

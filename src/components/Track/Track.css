@@ -1,0 +1,67 @@
+.track_info h3 {
+    color: white;
+
+}
+
+.track_info p {
+    color: gray;
+}
+
+.track {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-right: 20px;
+}
+
+.line {
+    height: 1px;
+    background: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.track_info {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 640px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+
+button svg {
+    color: white;
+    width: 2em;
+    height: 2em;
+    transition: 0.2s ease;
+}
+
+button svg:hover {
+    color: rgb(11, 11, 47);
+}
+
+
+
+audio {
+    margin-bottom: 15px;
+    width: 100%;
+    height: 20px;
+}
+
+.track img {
+    height: 5rem;
+    margin-right: 10px;
+}
+
+
+@media only screen and (max-width: 730px) {
+    .track img {
+        display: none;
+    }
+    
+}

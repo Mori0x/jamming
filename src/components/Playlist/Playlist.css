@@ -1,0 +1,101 @@
+.playlist_name {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 24px;
+    color: white;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    width: 86%;
+    flex-shrink: 1;
+}
+
+.playlist_name:focus {
+    outline: none;
+    border-bottom: 1px solid white;
+}
+
+.playlist {
+    background: rgba( 5, 18, 30, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 14px );
+    -webkit-backdrop-filter: blur( 14px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 450px;
+    text-align: left;
+    padding-left: 10px;
+    min-height: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.bn632-hover {
+    width: 160px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:focus {
+    outline: none;
+  }
+  
+  .bn632-hover.bn18 {
+    background-image: linear-gradient(
+      to right,
+      #25aae1,
+      #40e495,
+      #30dd8a,
+      #2bb673
+    );
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+  }
+
+.tracklist-playlist {
+  width: 95%;
+}
+
+
+@media screen and (max-width: 810px){
+  .bn632-hover {
+    width: 150px;
+  }
+  
+}
+
+
+@media only screen and (min-width: 1560px) {
+  .playlist {
+      width: 550px;
+  }
+  
+}
+
+@media only screen and (max-width: 680px) {
+  .playlist {
+    width: 40%;
+    flex-grow: 1;
+  }
+}

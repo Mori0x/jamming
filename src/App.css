@@ -1,38 +1,92 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-image: url('D:\web projects\react apps\jammming-project\jammming-app\public\background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  background-color: rgb(12, 10, 24);
+  padding: 20px;
+}
+
+.logo_text {
+  margin: 0 auto;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.special_sym {
+  color: rgb(47, 47, 246);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Grey background with some transparency */
+  z-index: 998; /* Set z-index lower than the loader to ensure it's below the spinner */
+}
+
+
+.loader {
+  width: 8px;
+  height: 40px;
+  border-radius: 4px;
+  display: block;
+  margin: 20px auto;
+  top: 50%; /* Center vertically */
+  left: 50%;
+  position: fixed;
+  z-index: 999;
+  background: currentColor;
+  color: #FFF;
+  box-sizing: border-box;
+  animation: animloader 0.4s 0.4s linear infinite alternate;
+}
+
+.loader::after, .loader::before {
+  content: '';
+  width: 8px;
+  height: 40px;
+  border-radius: 4px;
+  background: currentColor;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  box-sizing: border-box;
+  animation: animloader 0.3s  0.45s  linear infinite alternate;
+}
+.loader::before {
+  left: -20px;
+  animation-delay: 0s;
+}
+
+@keyframes animloader {
+  0%   { height: 48px} 
+  100% { height: 4px}
+}
+
+
+
+
+
+
+@media only screen and (max-width: 680px) {
+  .main {
+    flex-wrap: wrap;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+  
 }

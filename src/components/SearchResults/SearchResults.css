@@ -1,0 +1,32 @@
+.results_area {
+    background: rgba( 5, 18, 30, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 14px );
+    -webkit-backdrop-filter: blur( 14px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 450px;
+    text-align: left;
+    padding-left: 20px;
+    min-height: 300px;
+}
+
+.results_area h2 {
+    color: white;
+
+}
+
+
+@media only screen and (min-width: 1560px) {
+    .results_area {
+        width: 550px;
+    }
+    
+}
+
+@media only screen and (max-width: 680px) {
+    .results_area {
+        width: 40%;
+        flex-grow: 1;
+    }
+}
