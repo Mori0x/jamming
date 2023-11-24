@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   min-height: 100vh;
-  background-image: url('D:\web projects\react apps\jammming-project\jammming-app\public\background.jpg');
+  background-image: url('https://github.com/Mori0x/jamming/blob/main/public/background.jpg?raw=true');
   background-size: cover;
   background-position: center;
 }
